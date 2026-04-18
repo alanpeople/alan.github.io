@@ -1,0 +1,214 @@
+<!DOCTYPE html>
+<html lang="zh-CN" class="scroll-smooth">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>唯庸 | AI Agent 布道者</title>
+    <!-- Tailwind CSS -->
+    <script src="https://cdn.tailwindcss.com"></script>
+    <!-- Font Awesome -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    <!-- Google Fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600&family=Playfair+Display:ital,wght@0,400;0,600;0,700;1,400;1,600&display=swap" rel="stylesheet">
+    
+    <script>
+        tailwind.config = {
+            theme: {
+                extend: {
+                    fontFamily: {
+                        serif: ['"Playfair Display"', 'Georgia', 'serif'],
+                        sans: ['Inter', '-apple-system', 'BlinkMacSystemFont', '"PingFang SC"', 'sans-serif'],
+                    }
+                }
+            }
+        }
+    </script>
+    <style>
+        body {
+            /* Using a single gradient on body ensures no weird lines between sections */
+            background: linear-gradient(to bottom, 
+                #FFF1E6 0%, 
+                #E3E1E5 20%, 
+                #A2BEE0 40%, 
+                #A482B6 60%, 
+                #4E3B68 80%, 
+                #111827 100%);
+            background-size: 100% 100%;
+            background-attachment: scroll;
+        }
+
+        .icon-ji {
+            font-family: -apple-system, BlinkMacSystemFont, "PingFang SC", sans-serif;
+            font-weight: 800;
+        }
+
+        /* Glass card effect for Apple style */
+        .glass-card {
+            background: rgba(255, 255, 255, 0.85);
+            backdrop-filter: blur(12px);
+            -webkit-backdrop-filter: blur(12px);
+        }
+        .glass-card:hover {
+            background: rgba(255, 255, 255, 1);
+            transform: translateY(-4px);
+        }
+    </style>
+</head>
+<body class="font-sans antialiased text-gray-900 selection:bg-white/30 selection:text-black m-0 p-0">
+
+    <!-- Section 1: Hero -->
+    <section class="w-full bg-gradient-to-b from-[#FFF1E6] to-[#E3E1E5]">
+        <div class="max-w-4xl mx-auto px-6 py-32 md:py-48 text-center flex flex-col items-center justify-center min-h-[80vh]">
+            <h1 class="font-serif text-6xl md:text-8xl font-bold tracking-tight mb-6 text-gray-900 drop-shadow-sm">唯庸</h1>
+            <h2 class="text-xl md:text-2xl font-light tracking-widest uppercase text-gray-700 mb-4">AI Agent 布道者</h2>
+            <p class="text-md md:text-lg text-gray-600 mb-10 max-w-2xl mx-auto font-light leading-relaxed">
+                产品经理 · 开源社区主理人 · 效率革命推动者<br>
+                <span class="font-medium">前字节跳动AI产品经理</span>
+            </p>
+            <div class="flex gap-5">
+                <a href="https://okjk.co/GzVOHr" target="_blank" class="w-14 h-14 bg-white/60 hover:bg-white backdrop-blur-md rounded-full flex items-center justify-center text-gray-900 transition-all shadow-sm">
+                    <span class="icon-ji text-xl">即</span>
+                </a>
+                <a href="https://space.bilibili.com/3546742760934321" target="_blank" class="w-14 h-14 bg-white/60 hover:bg-white backdrop-blur-md rounded-full flex items-center justify-center text-gray-900 transition-all shadow-sm">
+                    <i class="fa-brands fa-bilibili text-2xl"></i>
+                </a>
+                <div class="relative group">
+                    <button class="w-14 h-14 bg-white/60 hover:bg-white backdrop-blur-md rounded-full flex items-center justify-center text-gray-900 transition-all shadow-sm">
+                        <i class="fa-brands fa-weixin text-2xl"></i>
+                    </button>
+                    <!-- Tooltip -->
+                    <div class="absolute top-full mt-3 left-1/2 -translate-x-1/2 bg-black/80 text-white text-sm px-4 py-2 rounded-lg opacity-0 group-hover:opacity-100 transition whitespace-nowrap pointer-events-none shadow-xl">
+                        微信: wangweiyong0219
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Section 2: About Me -->
+    <section class="w-full bg-gradient-to-b from-[#E3E1E5] to-[#A2BEE0]">
+        <div class="max-w-4xl mx-auto px-6 py-24 md:py-32">
+            <h3 class="font-serif text-4xl md:text-5xl italic mb-12 font-semibold text-center md:text-left text-gray-900">About me</h3>
+            <div class="text-lg md:text-xl font-light leading-loose max-w-3xl space-y-6 text-gray-800">
+                <p>
+                    我是 <strong>唯庸</strong>，致力于 <strong>AI Agent</strong> 的布道与应用。
+                </p>
+                <p>
+                    作为<strong>得到APP AI学习圈特聘讲师</strong>和<strong>AI企业转型培训讲师</strong>，我已获得 4000+ 学员的认证。在企业服务领域，我主导的<strong>企业AI转型咨询</strong>已成功助力 20+ 团队完成智能体工作流的部署。
+                </p>
+                <p>
+                    我发起了<strong>万人智能体计划</strong>，致力于用 AI 解放 10000 人的生产力。同时，我坚持使用 AI 独立开发产品，在不写一行代码的情况下实现了产品的商业化。
+                </p>
+            </div>
+        </div>
+    </section>
+
+    <!-- Section 3: Quote -->
+    <section class="w-full bg-gradient-to-b from-[#A2BEE0] to-[#A482B6]">
+        <div class="max-w-4xl mx-auto px-6 py-32 md:py-48 flex items-center justify-center text-center">
+            <h2 class="font-serif text-3xl md:text-5xl leading-tight font-medium text-white drop-shadow-lg">
+                "用 AI 解放 10000 人的生产力。<br>
+                <span class="mt-4 block text-2xl md:text-4xl text-white/80">使用 AI 不写一行代码，实现产品商业化。"</span>
+            </h2>
+        </div>
+    </section>
+
+    <!-- Section 4: Projects -->
+    <section class="w-full bg-gradient-to-b from-[#A482B6] to-[#4E3B68]">
+        <div class="max-w-4xl mx-auto px-6 py-24 md:py-32 text-white">
+            <h3 class="font-serif text-4xl md:text-5xl italic mb-20 font-semibold text-center">Works & Projects</h3>
+            
+            <div class="relative">
+                <!-- Vertical Line for Timeline -->
+                <div class="absolute left-[20px] md:left-[20%] top-0 bottom-0 w-px bg-white/30"></div>
+                
+                <!-- Project 1 -->
+                <div class="mb-16 relative flex flex-col md:flex-row items-start">
+                    <div class="absolute left-[20px] md:left-[20%] w-4 h-4 bg-white rounded-full -translate-x-[7px] md:-translate-x-1/2 mt-1.5 shadow-[0_0_0_4px_rgba(255,255,255,0.2)]"></div>
+                    <div class="md:w-[20%] pl-12 md:pl-0 md:pr-10 text-white/80 font-medium pt-1 mb-4 md:mb-0 uppercase tracking-wider text-sm">
+                        知识库
+                    </div>
+                    <a href="https://agent101.feishu.cn/wiki/KLarwIA1piLrBYk7bf2cBf3HnNe" target="_blank" class="md:w-[80%] ml-12 md:ml-0 glass-card text-gray-900 p-6 md:p-8 rounded-3xl shadow-2xl transition-all duration-300 group block">
+                        <h4 class="text-2xl font-serif font-bold mb-3 flex items-center justify-between">
+                            Agent 101 智能体指北
+                            <i class="fa-solid fa-arrow-right -rotate-45 text-gray-400 group-hover:text-gray-900 transition-colors"></i>
+                        </h4>
+                        <p class="text-gray-600 mb-6 font-light leading-relaxed">系统化的 AI Agent 知识库与实战指南，全面解析智能体的构建与应用。</p>
+                        <div class="w-full h-56 rounded-xl overflow-hidden bg-gray-100 relative">
+                            <img src="https://picsum.photos/1920/1080?random=1" class="w-full h-full object-cover group-hover:scale-105 transition duration-700" alt="Agent 101">
+                        </div>
+                    </a>
+                </div>
+
+                <!-- Project 2 -->
+                <div class="mb-16 relative flex flex-col md:flex-row items-start">
+                    <div class="absolute left-[20px] md:left-[20%] w-4 h-4 bg-white rounded-full -translate-x-[7px] md:-translate-x-1/2 mt-1.5 shadow-[0_0_0_4px_rgba(255,255,255,0.2)]"></div>
+                    <div class="md:w-[20%] pl-12 md:pl-0 md:pr-10 text-white/80 font-medium pt-1 mb-4 md:mb-0 uppercase tracking-wider text-sm">
+                        公开课
+                    </div>
+                    <a href="https://agent101.cn/" target="_blank" class="md:w-[80%] ml-12 md:ml-0 glass-card text-gray-900 p-6 md:p-8 rounded-3xl shadow-2xl transition-all duration-300 group block">
+                        <h4 class="text-2xl font-serif font-bold mb-3 flex items-center justify-between">
+                            唯庸的AI公开课
+                            <i class="fa-solid fa-arrow-right -rotate-45 text-gray-400 group-hover:text-gray-900 transition-colors"></i>
+                        </h4>
+                        <p class="text-gray-600 mb-6 font-light leading-relaxed">面向大众的 AI 普及与进阶实战课程，带你从零掌握 AI 工具链。</p>
+                        <div class="w-full h-56 rounded-xl overflow-hidden bg-gray-100 relative">
+                            <img src="https://picsum.photos/1920/1080?random=2" class="w-full h-full object-cover group-hover:scale-105 transition duration-700" alt="AI 公开课">
+                        </div>
+                    </a>
+                </div>
+
+                <!-- Project 3 -->
+                <div class="mb-0 relative flex flex-col md:flex-row items-start">
+                    <div class="absolute left-[20px] md:left-[20%] w-4 h-4 bg-white rounded-full -translate-x-[7px] md:-translate-x-1/2 mt-1.5 shadow-[0_0_0_4px_rgba(255,255,255,0.2)]"></div>
+                    <div class="md:w-[20%] pl-12 md:pl-0 md:pr-10 text-white/80 font-medium pt-1 mb-4 md:mb-0 uppercase tracking-wider text-sm">
+                        独立产品
+                    </div>
+                    <a href="https://yonote.net/" target="_blank" class="md:w-[80%] ml-12 md:ml-0 glass-card text-gray-900 p-6 md:p-8 rounded-3xl shadow-2xl transition-all duration-300 group block">
+                        <h4 class="text-2xl font-serif font-bold mb-3 flex items-center justify-between">
+                            YoNote 万物可视化Agent
+                            <i class="fa-solid fa-arrow-right -rotate-45 text-gray-400 group-hover:text-gray-900 transition-colors"></i>
+                        </h4>
+                        <p class="text-gray-600 mb-6 font-light leading-relaxed">创新的可视化 Agent，释放信息的真正价值，使用 AI 打造的商业化产品。</p>
+                        <div class="w-full h-56 rounded-xl overflow-hidden bg-gray-100 relative">
+                            <img src="https://picsum.photos/1920/1080?random=3" class="w-full h-full object-cover group-hover:scale-105 transition duration-700" alt="YoNote">
+                        </div>
+                    </a>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Section 5: Footer -->
+    <section class="w-full bg-gradient-to-b from-[#4E3B68] to-[#111827]">
+        <div class="max-w-4xl mx-auto px-6 py-24 md:py-32 text-center text-white">
+            <h3 class="font-serif text-4xl md:text-5xl italic mb-6 font-semibold">Let's connect</h3>
+            <p class="text-white/70 font-light mb-12 max-w-lg mx-auto text-lg">
+                关于企业 AI 转型、智能体应用或课程合作
+            </p>
+            <div class="flex flex-col sm:flex-row justify-center items-center gap-6 mb-16">
+                <!-- Wechat -->
+                <div class="flex items-center gap-4 bg-white/10 hover:bg-white/20 backdrop-blur-md px-6 py-4 rounded-2xl transition-all border border-white/10 w-full sm:w-auto">
+                    <i class="fa-brands fa-weixin text-3xl text-[#07C160]"></i>
+                    <div class="text-left">
+                        <div class="text-xs text-white/50 uppercase tracking-wider mb-0.5">WeChat</div>
+                        <div class="font-medium text-lg">wangweiyong0219</div>
+                    </div>
+                </div>
+                <!-- Official Account -->
+                <div class="flex items-center gap-4 bg-white/10 hover:bg-white/20 backdrop-blur-md px-6 py-4 rounded-2xl transition-all border border-white/10 w-full sm:w-auto">
+                    <i class="fa-solid fa-qrcode text-3xl text-white"></i>
+                    <div class="text-left">
+                        <div class="text-xs text-white/50 uppercase tracking-wider mb-0.5">Official Account</div>
+                        <div class="font-medium text-lg">唯庸AI进化论</div>
+                    </div>
+                </div>
+            </div>
+            <p class="text-white/30 text-sm">© 2024 唯庸. All rights reserved.</p>
+        </div>
+    </section>
+
+</body>
+</html>
